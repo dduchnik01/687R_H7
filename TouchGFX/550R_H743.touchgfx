@@ -6,14 +6,123 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "BackgroundBox",
-            "Width": 1024,
-            "Height": 600,
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
             "Color": {
-              "Red": 242,
-              "Green": 242,
-              "Blue": 242
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
             }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1_2",
+            "X": 23,
+            "Y": 240,
+            "Width": 329,
+            "Height": 144,
+            "Color": {
+              "Red": 184,
+              "Green": 184,
+              "Blue": 184
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1_1",
+            "Width": 800,
+            "Height": 68,
+            "Color": {
+              "Red": 184,
+              "Green": 184,
+              "Blue": 184
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Y": 412,
+            "Width": 800,
+            "Height": 68
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1",
+            "X": 415,
+            "Y": 240,
+            "Width": 366,
+            "Height": 144,
+            "Color": {
+              "Red": 184,
+              "Green": 184,
+              "Blue": 184
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 431,
+            "Y": 76,
+            "Width": 290,
+            "Height": 121,
+            "TextId": "__SingleUse_POV7",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 85,
+            "Y": 425,
+            "Width": 43,
+            "Height": 43,
+            "RelativeFilename": "Bottom-Bar-Home.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 641,
+            "Y": 424,
+            "Width": 41,
+            "Height": 44,
+            "RelativeFilename": "Bottom-Bar-Enter.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 431,
+            "Y": 425,
+            "Width": 64,
+            "Height": 43,
+            "RelativeFilename": "Bottom-Bar-Zero.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 250,
+            "Y": 425,
+            "Width": 64,
+            "Height": 43,
+            "RelativeFilename": "Bottom-Bar-Tara.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 761,
+            "Y": 24,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "wifi3.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image6",
+            "X": 741,
+            "Y": 181,
+            "Width": 40,
+            "Height": 16,
+            "RelativeFilename": "stabilityIcon.png"
           }
         ],
         "Interactions": []
@@ -22,8 +131,8 @@
     "CustomContainerDefinitions": [],
     "Name": "MyApplication",
     "Resolution": {
-      "Width": 1024,
-      "Height": 600
+      "Width": 800,
+      "Height": 480
     },
     "SelectedColorDepth": 16,
     "StartupScreenName": "MainScreen",
@@ -42,8 +151,8 @@
     ],
     "AvailableResolutions": [
       {
-        "Width": 1024,
-        "Height": 600
+        "Width": 800,
+        "Height": 480
       }
     ],
     "PhysicalButtons": [],

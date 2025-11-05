@@ -3,16 +3,64 @@
 /*********************************************************************************/
 #include <gui_generated/mainscreen_screen/MainScreenViewBase.hpp>
 #include <touchgfx/Color.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
 MainScreenViewBase::MainScreenViewBase()
 {
-    __background.setPosition(0, 0, 1024, 600);
+    __background.setPosition(0, 0, 800, 480);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    BackgroundBox.setPosition(0, 0, 1024, 600);
-    BackgroundBox.setColor(touchgfx::Color::getColorFromRGB(242, 242, 242));
-    add(BackgroundBox);
+    box1.setPosition(0, 0, 800, 480);
+    box1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    add(box1);
+
+    box2_1_2.setPosition(23, 240, 329, 144);
+    box2_1_2.setColor(touchgfx::Color::getColorFromRGB(184, 184, 184));
+    add(box2_1_2);
+
+    box2_1_1.setPosition(0, 0, 800, 68);
+    box2_1_1.setColor(touchgfx::Color::getColorFromRGB(184, 184, 184));
+    add(box2_1_1);
+
+    box2.setPosition(0, 412, 800, 68);
+    box2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    add(box2);
+
+    box2_1.setPosition(415, 240, 366, 144);
+    box2_1.setColor(touchgfx::Color::getColorFromRGB(184, 184, 184));
+    add(box2_1);
+
+    textArea1.setXY(431, 76);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_POV7));
+    add(textArea1);
+
+    image1.setXY(85, 425);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_BOTTOM_BAR_HOME_ID));
+    add(image1);
+
+    image2.setXY(641, 424);
+    image2.setBitmap(touchgfx::Bitmap(BITMAP_BOTTOM_BAR_ENTER_ID));
+    add(image2);
+
+    image3.setXY(431, 425);
+    image3.setBitmap(touchgfx::Bitmap(BITMAP_BOTTOM_BAR_ZERO_ID));
+    add(image3);
+
+    image4.setXY(250, 425);
+    image4.setBitmap(touchgfx::Bitmap(BITMAP_BOTTOM_BAR_TARA_ID));
+    add(image4);
+
+    image5.setXY(761, 24);
+    image5.setBitmap(touchgfx::Bitmap(BITMAP_WIFI3_ID));
+    add(image5);
+
+    image6.setXY(741, 181);
+    image6.setBitmap(touchgfx::Bitmap(BITMAP_STABILITYICON_ID));
+    add(image6);
 }
 
 MainScreenViewBase::~MainScreenViewBase()

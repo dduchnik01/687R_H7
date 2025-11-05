@@ -8,6 +8,8 @@
 #include <mvp/View.hpp>
 #include <gui/mainscreen_screen/MainScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class MainScreenViewBase : public touchgfx::View<MainScreenPresenter>
 {
@@ -25,7 +27,18 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box BackgroundBox;
+    touchgfx::Box box1;
+    touchgfx::Box box2_1_2;
+    touchgfx::Box box2_1_1;
+    touchgfx::Box box2;
+    touchgfx::Box box2_1;
+    touchgfx::TextArea textArea1;
+    touchgfx::Image image1;
+    touchgfx::Image image2;
+    touchgfx::Image image3;
+    touchgfx::Image image4;
+    touchgfx::Image image5;
+    touchgfx::Image image6;
 
 private:
 

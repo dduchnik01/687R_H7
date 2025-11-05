@@ -6,6 +6,17 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
+const uint16_t BITMAP_ACTIONSETUP_ID = 0;
+const uint16_t BITMAP_ACTIONSHOWHELP_ID = 1;
+const uint16_t BITMAP_ACTIONSHUTDOWN_ID = 2;
+const uint16_t BITMAP_BOTTOM_BAR_ENTER_ID = 3;
+const uint16_t BITMAP_BOTTOM_BAR_HOME_ID = 4;
+const uint16_t BITMAP_BOTTOM_BAR_TARA_ID = 5;
+const uint16_t BITMAP_BOTTOM_BAR_ZERO_ID = 6;
+const uint16_t BITMAP_MENUAKTUALIZACJA_ID = 7;
+const uint16_t BITMAP_MENUINNE_ID = 8;
+const uint16_t BITMAP_STABILITYICON_ID = 9;
+const uint16_t BITMAP_WIFI3_ID = 10;
 
 namespace BitmapDatabase
 {
