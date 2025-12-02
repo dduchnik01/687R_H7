@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "550R_H743",
+    "Name": "687R_H7",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":
@@ -19,7 +19,7 @@
     "SubFamily": "STM32H743/753",
     "Platform": "m7",
     "Toolchain": "STM32CubeIDE",
-    "ProjectFile": "../550R_H743.ioc",
+    "ProjectFile": "../687R_H7.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [
     ],

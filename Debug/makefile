@@ -69,34 +69,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 550R_H743
+BUILD_ARTIFACT_NAME := 687R_H7
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-550R_H743.elf \
+687R_H7.elf \
 
 MAP_FILES += \
-550R_H743.map \
+687R_H7.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-550R_H743.list \
+687R_H7.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 550R_H743.elf secondary-outputs
+main-build: 687R_H7.elf secondary-outputs
 
 # Tool invocations
-550R_H743.elf 550R_H743.map: $(OBJS) $(USER_OBJS) C:\Users\DDusznik\Desktop\Soft\550R_H743\STM32H743XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "550R_H743.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\DDusznik\Desktop\Soft\550R_H743\STM32H743XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="550R_H743.map" -Wl,--gc-sections -static -L"C:\Users\DDusznik\Desktop\Soft\550R_H743\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+687R_H7.elf 687R_H7.map: $(OBJS) $(USER_OBJS) C:\Users\DDusznik\Desktop\Soft\687R_H7\STM32H743XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "687R_H7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\DDusznik\Desktop\Soft\687R_H7\STM32H743XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="687R_H7.map" -Wl,--gc-sections -static -L"C:\Users\DDusznik\Desktop\Soft\687R_H7\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -105,14 +105,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-550R_H743.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "550R_H743.list"
+687R_H7.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "687R_H7.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 550R_H743.elf 550R_H743.list 550R_H743.map default.size.stdout
+	-$(RM) 687R_H7.elf 687R_H7.list 687R_H7.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

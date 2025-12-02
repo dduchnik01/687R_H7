@@ -176,7 +176,7 @@
     "SubFamily": "STM32H743/753",
     "Toolchain": "STM32CubeIDE",
     "Platform": "m7",
-    "ProjectFile": "../550R_H743.ioc",
+    "ProjectFile": "../687R_H7.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [],
     "AdditionalFeatures": []
