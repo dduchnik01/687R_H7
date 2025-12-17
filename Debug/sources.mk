@@ -38,7 +38,7 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Application/DeviceCommunication \
+Application/Communication \
 Application \
 Core/Src \
 Core/Startup \

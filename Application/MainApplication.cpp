@@ -1,14 +1,16 @@
 #include "MainApplication.hpp"
-#include "DeviceCommunication/CommManager.hpp"
+#include "../Core/Inc/usart.h"
+#include "Communication/Comm.hpp"
+#include "string.h"
 
 void MainApplicationInit(void)
 {
-
+	comm1.Init();
 }
 
-void MainApplicationLoop()
+void MainApplicationLoop(void)
 {
-	//timer.Set(500); // 500ms
-	commManager.SendRequest(Command::MASS_GRAMS);
-
+	comm1.SendRequest();
+	comm1.ReceiveData();
 }
+
