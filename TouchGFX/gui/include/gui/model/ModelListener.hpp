@@ -10,6 +10,10 @@ public:
     
     virtual ~ModelListener() {}
 
+    virtual void fAfterChanged(unsigned int fAfter){}
+    virtual void fBeforeChanged(unsigned int fBefore){}
+    virtual void finalMassChanged(float mass){}
+
     void bind(Model* m)
     {
         model = m;

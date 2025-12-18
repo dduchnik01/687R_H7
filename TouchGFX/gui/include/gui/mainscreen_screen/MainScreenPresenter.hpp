@@ -25,6 +25,10 @@ public:
      */
     virtual void deactivate();
 
+    virtual void fBeforeChanged(unsigned int fBefore);
+    virtual void fAfterChanged(unsigned int fAfter);
+    virtual void finalMassChanged(float mass);
+
     virtual ~MainScreenPresenter() {}
 
 private:

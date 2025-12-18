@@ -16,6 +16,14 @@ MainScreenViewBase::MainScreenViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     add(box1);
 
+    finalMassTextArea.setPosition(224, 76, 508, 164);
+    finalMassTextArea.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    finalMassTextArea.setLinespacing(0);
+    Unicode::snprintf(finalMassTextAreaBuffer, FINALMASSTEXTAREA_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_9J7S).getText());
+    finalMassTextArea.setWildcard(finalMassTextAreaBuffer);
+    finalMassTextArea.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X4ZR));
+    add(finalMassTextArea);
+
     box2_1_2.setPosition(23, 240, 329, 144);
     box2_1_2.setColor(touchgfx::Color::getColorFromRGB(184, 184, 184));
     add(box2_1_2);
@@ -32,11 +40,21 @@ MainScreenViewBase::MainScreenViewBase()
     box2_1.setColor(touchgfx::Color::getColorFromRGB(184, 184, 184));
     add(box2_1);
 
-    textArea1.setXY(431, 76);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_POV7));
-    add(textArea1);
+    fBeforeTextArea.setPosition(423, 240, 259, 27);
+    fBeforeTextArea.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    fBeforeTextArea.setLinespacing(0);
+    Unicode::snprintf(fBeforeTextAreaBuffer, FBEFORETEXTAREA_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_55O2).getText());
+    fBeforeTextArea.setWildcard(fBeforeTextAreaBuffer);
+    fBeforeTextArea.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WR96));
+    add(fBeforeTextArea);
+
+    fAfterTextArea.setPosition(423, 267, 259, 27);
+    fAfterTextArea.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    fAfterTextArea.setLinespacing(0);
+    Unicode::snprintf(fAfterTextAreaBuffer, FAFTERTEXTAREA_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_4LIF).getText());
+    fAfterTextArea.setWildcard(fAfterTextAreaBuffer);
+    fAfterTextArea.setTypedText(touchgfx::TypedText(T___SINGLEUSE_POV7));
+    add(fAfterTextArea);
 
     image1.setXY(85, 425);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_BOTTOM_BAR_HOME_ID));

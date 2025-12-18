@@ -4,16 +4,37 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Group1">
+      <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_POV7" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">0.00g</Translation>
+      <Text Id="__SingleUse_55O2" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_WR96" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Przed:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9J7S" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_X4ZR" Alignment="Right" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;g</Translation>
+      </Text>
+      <Text Id="__SingleUse_4LIF" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_POV7" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Po:&lt;value&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="100" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789.-" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789-." />
+    <Typography Id="Typography_01" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789-." />
   </Typographies>
 </TextDatabase>

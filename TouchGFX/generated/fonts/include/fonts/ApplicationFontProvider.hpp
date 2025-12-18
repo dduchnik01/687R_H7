@@ -16,13 +16,17 @@ struct Typography
     static const touchgfx::FontId DEFAULT = 0;
     static const touchgfx::FontId LARGE = 1;
     static const touchgfx::FontId SMALL = 2;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 3;
+    static const touchgfx::FontId TYPOGRAPHY_01 = 4;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0; // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;   // verdana_100_4bpp
-    static const touchgfx::FontId SMALL = 2;   // verdana_10_4bpp
+    static const touchgfx::FontId DEFAULT = 0;       // verdana_20_4bpp
+    static const touchgfx::FontId LARGE = 1;         // verdana_90_4bpp
+    static const touchgfx::FontId SMALL = 2;         // verdana_10_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_00 = 1; // verdana_90_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_01 = 0; // verdana_20_4bpp
     static const uint16_t NUMBER_OF_FONTS = 3;
 };
 

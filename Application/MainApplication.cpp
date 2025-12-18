@@ -10,7 +10,7 @@ void MainApplicationInit(void)
 
 void MainApplicationLoop(void)
 {
-	comm1.SendRequest();
+	comm1.SendRequest(ASK_FOR_MASS);
 	comm1.ReceiveData();
 }
 
