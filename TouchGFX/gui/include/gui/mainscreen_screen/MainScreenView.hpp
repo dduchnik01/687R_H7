@@ -11,9 +11,6 @@ public:
     virtual ~MainScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    virtual void updatefBefore(unsigned int fBefore);
-    virtual void updatefAfter(unsigned int fAfter);
-    virtual void updateFinalMass(float mass);
 protected:
 };
 

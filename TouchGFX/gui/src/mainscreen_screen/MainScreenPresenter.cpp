@@ -16,18 +16,3 @@ void MainScreenPresenter::deactivate()
 {
 
 }
-
-void MainScreenPresenter::finalMassChanged(float mass)
-{
-	view.updateFinalMass(mass);
-}
-
-void MainScreenPresenter::fBeforeChanged(unsigned int fBefore)
-{
-	view.updatefBefore(fBefore);
-}
-
-void MainScreenPresenter::fAfterChanged(unsigned int fAfter)
-{
-	view.updatefAfter(fAfter);
-}

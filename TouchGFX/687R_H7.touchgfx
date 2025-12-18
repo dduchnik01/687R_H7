@@ -16,21 +16,6 @@
             }
           },
           {
-            "Type": "TextArea",
-            "Name": "finalMassTextArea",
-            "X": 224,
-            "Y": 76,
-            "Width": 508,
-            "Height": 164,
-            "TextId": "__SingleUse_X4ZR",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_9J7S",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
             "Type": "Box",
             "Name": "box2_1_2",
             "X": 23,
@@ -76,33 +61,14 @@
           },
           {
             "Type": "TextArea",
-            "Name": "fBeforeTextArea",
-            "X": 423,
-            "Y": 240,
-            "Width": 259,
-            "Height": 27,
-            "TextId": "__SingleUse_WR96",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_55O2",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "fAfterTextArea",
-            "X": 423,
-            "Y": 267,
-            "Width": 259,
-            "Height": 27,
+            "Name": "textArea1",
+            "X": 431,
+            "Y": 76,
+            "Width": 290,
+            "Height": 121,
             "TextId": "__SingleUse_POV7",
             "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_4LIF",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
+            "AutoSize": true
           },
           {
             "Type": "Image",

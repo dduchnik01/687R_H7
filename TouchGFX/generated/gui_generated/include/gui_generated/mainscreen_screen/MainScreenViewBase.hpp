@@ -8,7 +8,7 @@
 #include <mvp/View.hpp>
 #include <gui/mainscreen_screen/MainScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Image.hpp>
 
 class MainScreenViewBase : public touchgfx::View<MainScreenPresenter>
@@ -28,29 +28,17 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Box box1;
-    touchgfx::TextAreaWithOneWildcard finalMassTextArea;
     touchgfx::Box box2_1_2;
     touchgfx::Box box2_1_1;
     touchgfx::Box box2;
     touchgfx::Box box2_1;
-    touchgfx::TextAreaWithOneWildcard fBeforeTextArea;
-    touchgfx::TextAreaWithOneWildcard fAfterTextArea;
+    touchgfx::TextArea textArea1;
     touchgfx::Image image1;
     touchgfx::Image image2;
     touchgfx::Image image3;
     touchgfx::Image image4;
     touchgfx::Image image5;
     touchgfx::Image image6;
-
-    /*
-     * Wildcard Buffers
-     */
-    static const uint16_t FINALMASSTEXTAREA_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar finalMassTextAreaBuffer[FINALMASSTEXTAREA_SIZE];
-    static const uint16_t FBEFORETEXTAREA_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar fBeforeTextAreaBuffer[FBEFORETEXTAREA_SIZE];
-    static const uint16_t FAFTERTEXTAREA_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar fAfterTextAreaBuffer[FAFTERTEXTAREA_SIZE];
 
 private:
 

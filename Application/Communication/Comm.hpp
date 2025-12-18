@@ -6,12 +6,6 @@
 
 #define RX_BUFFER_SIZE	15
 
-typedef enum
-{
-	ASK_FOR_MASS = 0x02,
-
-} Command_t;
-
 class Comm
 {
 public:
@@ -19,12 +13,10 @@ public:
 	void Init();
     void ReceiveByte();
 	void ReceiveData();
-	void SendRequest(Command_t cmd);
+	void SendRequest();
 	volatile uint8_t usart2_rx_flag = 0;
     volatile uint8_t rxByte;
-    uint8_t rxBuffer[4];
-    uint32_t receivedMass;
-    float receivedMassFloat;
+    RingBuffer_t ringBuffer;
 
 private:
     UART_HandleTypeDef& _huart;
